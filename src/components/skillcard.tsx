@@ -1,115 +1,27 @@
-import Image from "next/image";
+import SkillBadge from "./skillbadge";
+import { DiCss3, DiReact } from "react-icons/di";
+import { FaJsSquare, FaHtml5, FaGithub } from "react-icons/fa";
+import { BiLogoTypescript } from "react-icons/bi";
+import { SiBlender, SiTailwindcss, SiThreedotjs } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
+import { RiNextjsFill } from "react-icons/ri";
+import { TbBrandFigma } from "react-icons/tb";
 
 export default function SkillCard() {
   return (
-    <>
-      <div className="grid grid-cols-4 gap-4 mt-16">
-        <div className="flex flex-wrap justify-center items-center gap-2 py-3 px-4.5 bg-white hover:bg-black hover:text-white border-1">
-          <Image
-            src="assets/figma-brands.svg"
-            alt="tools figma"
-            width={16}
-            height={16}
-          />
-          <p>Figma</p>
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-2 py-3 px-4.5 bg-white hover:bg-black hover:text-white border-1">
-          <Image
-            src="assets/Blender.svg"
-            alt="tools Blender"
-            width={20}
-            height={20}
-          />
-          <p>Blender</p>
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-2 py-3 px-4.5 bg-white hover:bg-black hover:text-white border-1">
-          <div className="hover:text-white">
-            <Image
-              src="assets/github.svg"
-              alt="tools figma"
-              width={16}
-              height={16}
-            />
-          </div>
-          <p>Github</p>
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-2 py-3 px-4.5 bg-white hover:bg-black hover:text-white border-1">
-          <Image
-            src="assets/vscode.svg"
-            alt="tools vscode"
-            width={16}
-            height={16}
-          />
-          <p>Visual Studio Code</p>
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-2 py-3 px-4.5 bg-white hover:bg-black hover:text-white border-1">
-          <Image
-            src="assets/html5.svg"
-            alt="tools HTML"
-            width={16}
-            height={16}
-          />
-          <p>HTML</p>
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-2 py-3 px-4.5 bg-white hover:bg-black hover:text-white border-1">
-          <Image src="assets/css3.svg" alt="tools CSS" width={16} height={16} />
-          <p>CSS</p>
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-2 py-3 px-4.5 bg-white hover:bg-black hover:text-white border-1">
-          <Image
-            src="assets/js.svg"
-            alt="tools JavaScript"
-            width={16}
-            height={16}
-          />
-          <p>JavaScript</p>
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-2 py-3 px-4.5 bg-white hover:bg-black hover:text-white border-1">
-          <Image
-            src="assets/Typescript.svg"
-            alt="tools TypeScript"
-            width={16}
-            height={16}
-          />
-          <p>TypeScript</p>
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-2 py-3 px-4.5 bg-white hover:bg-black hover:text-white border-1">
-          <Image
-            src="assets/reactjs.svg"
-            alt="tools React JS"
-            width={16}
-            height={16}
-          />
-          <p>React JS</p>
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-2 py-3 px-4.5 bg-white hover:bg-black hover:text-white border-1">
-          <Image
-            src="assets/tailwindcss.svg"
-            alt="tools Tailwind CSS"
-            width={16}
-            height={16}
-          />
-          <p>Tailwind CSS</p>
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-2 py-3 px-4.5 bg-white hover:bg-black hover:text-white border-1">
-          <Image
-            src="assets/Next.js.svg"
-            alt="tools Next JS"
-            width={16}
-            height={16}
-          />
-          <p>Next JS</p>
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-2 py-3 px-4.5 bg-white hover:bg-black hover:text-white border-1">
-          <Image
-            src="assets/nodejs.svg"
-            alt="tools Node JS"
-            width={16}
-            height={16}
-          />
-          <p>Node JS</p>
-        </div>
-      </div>
-    </>
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
+      <SkillBadge icon={VscVscode} label="Visual Studio Code" />
+      <SkillBadge icon={TbBrandFigma} label="Figma" />
+      <SkillBadge icon={FaGithub} label="Github" />
+      <SkillBadge icon={SiBlender} label="Blender" />
+      <SkillBadge icon={FaHtml5} label="HTML 5" />
+      <SkillBadge icon={DiCss3} label="CSS 3" />
+      <SkillBadge icon={FaJsSquare} label="Javascript" />
+      <SkillBadge icon={BiLogoTypescript} label="Typescript" />
+      <SkillBadge icon={DiReact} label="ReactJS" />
+      <SkillBadge icon={SiTailwindcss} label="TailwindCSS" />
+      <SkillBadge icon={RiNextjsFill} label="NextJS" />
+      <SkillBadge icon={SiThreedotjs} label="ThreeJS" />
+    </div>
   );
 }

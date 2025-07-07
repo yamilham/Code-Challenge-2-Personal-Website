@@ -1,12 +1,11 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"); */
 @import "tailwindcss";
 
-@theme {
+@theme inline {
   /* --font-grotesk: "Space_Grotesk", sans-serif; */
   --background: #ffffff;
   --foreground: #383838;
   --shadow: 3px 2px 14px -2px rgba(0, 0, 0, 0.12);
-
 }
 @media screen and (min-width: 480px) {
   section {
@@ -19,8 +18,8 @@
 
 section {
   min-height: 100vh;
-  margin-top: 56px;
+  margin-top: 24px;
   margin-bottom: 64px;
-  margin-left: 72px;
-  margin-right: 72px;
+  /* margin-left: 72px;
+  margin-right: 72px; */
 }
