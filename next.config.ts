@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
-
+/** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
-  /* config options here */
+  /* config options here */ webpack: (config) => {
+    config.externals = [...config.externals, { canvas: "canvas" }];
+    return config;
+  },
 };
 
 export default nextConfig;
+
+module.exports = nextConfig;

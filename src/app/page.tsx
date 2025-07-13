@@ -12,7 +12,7 @@ import ContactMe from "@/section/contact";
 export default function Home() {
   return (
     <>
-      <main className="max-h-screen max-w-screen px-4 pb-10">
+      <main className="max-h-screen max-w-screen px-4 md:px-6 lg:px-8 pb-10 md:pb-10 lg:pb-16">
         {/* <Header /> */}
         <Navbar />
         <Hero />

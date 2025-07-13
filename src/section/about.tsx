@@ -7,13 +7,13 @@ import { RiNextjsFill } from "react-icons/ri";
 
 export default function About() {
   return (
-    <section id="about" className="py-6 sm:py-10 sm:px-6 lg:px-8">
+    <section id="about" className="py-4 md:py-6 lg:py-8 px-4 md:px-6 lg:px-8">
       <div className="flex flex-col">
         <TitleSection headingTwo="Get to Know More" description="About Me" />
       </div>
-      <div className="text-center py-6 sm:py-10">
-        <div className="text-center text-xl md:text-4xl lg:text-6xl font-light leading-relaxed sm:leading-loose lg:leading-16 mx-auto">
-          <p className="mb-6 sm:mb-8">
+      <div className="text-center py-6 md:py-10 lg:py-10">
+        <div className="text-center text-xl md:text-4xl lg:text-6xl font-light leading-relaxed lg:leading-17 mx-auto md:px-4 lg:px-8">
+          <p className="mb-6 md:mb-8 lg:mb-8">
             A Freelance 3D artist with more than 3 years of experience in
             creating 3D rendered models. Founded Yacons Design as a resources of
             3D illustration assets
@@ -50,11 +50,9 @@ export default function About() {
             <div className="w-auto text-3xl md:text-3xl lg:text-7xl font-bold">
               01
             </div>
-
             <h4 className="col-span-2 text-[16px] md:text-3xl lg:text-5xl font-medium">
               🔬 Attention to Detail
             </h4>
-
             <p className="col-span-2 text-[14px] md:text-2xl lg:text-2xl font-light leading-tight">
               Strive for visual precision and functionality in every project —
               whether its polishing 3D visuals, refining UI interactions, or

@@ -4,7 +4,10 @@ import { testimonies } from "@/data/testimonial";
 
 export default function Testimonial() {
   return (
-    <section id="testimonial" className="min-h-screen py-10">
+    <section
+      id="testimonial"
+      className="py-4 md:py-6 lg:py-8 px-6 md:px-6 lg:px-8 h-full"
+    >
       <div className="py-8">
         <TitleSection
           headingTwo="Testimonials"
@@ -12,8 +15,7 @@ export default function Testimonial() {
         />
       </div>
 
-      {/* Horizontal scroll container */}
-      <div className="overflow-x-auto scrollbar-hide">
+      <div className="overflow-x-auto scrollbar-hide md:scrollbar-hide">
         <div className="flex gap-5 pb-4 snap-x snap-mandatory">
           {testimonies.map((testimony) => (
             <div
@@ -25,16 +27,6 @@ export default function Testimonial() {
           ))}
         </div>
       </div>
-
-      {/* Optional: Add scroll indicators
-      <div className="flex justify-center mt-4 space-x-2">
-        {testimonies.map((_, index) => (
-          <div
-            key={index}
-            className="w-2 h-2 rounded-full bg-gray-300 opacity-50"
-          />
-        ))}
-      </div> */}
     </section>
   );
 }

@@ -22,7 +22,6 @@ export default function ContactForm({ onClose }: ContactFormProps) {
 
   const onSubmit = (data: FormData) => {
     console.log(data);
-    // Handle form submission here
     if (onClose) {
       onClose();
     }
@@ -31,13 +30,13 @@ export default function ContactForm({ onClose }: ContactFormProps) {
   return (
     <div className="">
       <div className="flex justify-between items-center mb-4">
-        <h3 className="text-xl md:text-2xl lg:text-2xl font-semibold">
+        <h3 className="text-xl md:text-3xl lg:text-4xl font-medium">
           Contact Me
         </h3>
         {onClose && (
           <button
             onClick={onClose}
-            className="text-gray-500 hover:text-gray-700"
+            className="text-xl md:text-2xl lg:text-2xl text-gray-500 hover:text-gray-700"
           >
             ✕
           </button>
@@ -48,7 +47,7 @@ export default function ContactForm({ onClose }: ContactFormProps) {
         <div className="py-2 md:py-4 lg:py-4">
           <label
             htmlFor="name"
-            className="block text-xl md:text-2xl lg:text-2xl font-medium mb-1"
+            className="block text-xl md:text-2xl lg:text-3xl font-medium mb-1"
           >
             Name
           </label>
@@ -56,8 +55,8 @@ export default function ContactForm({ onClose }: ContactFormProps) {
             {...register("name", { required: "Name is required" })}
             type="text"
             id="name"
-            className="w-full p-2 border-b-2"
-            placeholder="Enter Your Full Name"
+            className="w-full text-xl md:text-2xl lg:text-2xl font-light py-2 border-b-2"
+            placeholder="Enter your full name"
           />
           {errors.name && (
             <p className="text-red-500 text-xl md:text-2xl lg:text-2xl">
@@ -69,7 +68,7 @@ export default function ContactForm({ onClose }: ContactFormProps) {
         <div className="py-2 md:py-4 lg:py-4">
           <label
             htmlFor="email"
-            className="block text-xl md:text-2xl lg:text-2xl font-medium mb-1"
+            className="block text-xl md:text-2xl lg:text-3xl font-medium mb-1"
           >
             Email
           </label>
@@ -83,8 +82,8 @@ export default function ContactForm({ onClose }: ContactFormProps) {
             })}
             type="email"
             id="email"
-            placeholder="Enter Your Email"
-            className="w-full p-2 border-b-2"
+            placeholder="Enter your email"
+            className="w-full text-xl md:text-2xl lg:text-2xl font-light py-2 border-b-2"
           />
           {errors.email && (
             <p className="text-red-500 text-xl md:text-2xl lg:text-2xl">
@@ -96,7 +95,7 @@ export default function ContactForm({ onClose }: ContactFormProps) {
         <div className="py-2 md:py-4 lg:py-4">
           <label
             htmlFor="message"
-            className="block text-xl md:text-2xl lg:text-2xl font-medium mb-1"
+            className="block text-xl md:text-2xl lg:text-3xl font-medium mb-1"
           >
             Message
           </label>
@@ -104,8 +103,8 @@ export default function ContactForm({ onClose }: ContactFormProps) {
             {...register("message", { required: "Message is required" })}
             id="message"
             placeholder="Type your Goals"
-            rows={4}
-            className="w-full p-2 border-b-2"
+            rows={1}
+            className="w-full text-xl md:text-2xl lg:text-2xl font-light py-2 border-b-2"
           />
           {errors.message && (
             <p className="text-red-500 text-xl md:text-2xl lg:text-2xl">

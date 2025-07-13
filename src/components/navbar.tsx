@@ -16,10 +16,10 @@ export default function Navbar() {
       // Clear existing timeout
       clearTimeout(timeoutId);
 
-      // Set new timeout to hide navbar after 3 seconds of no scrolling
+      
       timeoutId = setTimeout(() => {
         setIsVisible(false);
-      }, 3000);
+      }, 1500);
     };
 
     const handleMouseMove = () => {

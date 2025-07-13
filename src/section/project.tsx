@@ -4,7 +4,7 @@ import { projects } from "@/data/projects";
 
 export default function Projects() {
   return (
-    <section id="projects" className="sm:px-6 lg:px-8">
+    <section id="projects" className="px-4 md:px-6 lg:px-8">
       <div className="py-6 sm:py-10">
         <TitleSection
           headingTwo="Curated Projects"

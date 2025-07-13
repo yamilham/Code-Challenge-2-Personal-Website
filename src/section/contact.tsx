@@ -17,7 +17,10 @@ export default function ContactMe() {
   };
 
   return (
-    <section id="contact" className="flex flex-col">
+    <section
+      id="contact"
+      className="flex flex-col py-4 md:py-6 lg:py-8 px-4 md:px-6 lg:px-8"
+    >
       <div className="bg-gray-300 p-8 rounded-md">
         <div className="pb-16">
           <TitleSection
