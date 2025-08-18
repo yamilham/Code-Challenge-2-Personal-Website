@@ -24,7 +24,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/"
-                  className="text-gray-600 hover:text-gray-900 transition-colors duration-200 text-sm"
+                  className="text-gray-600 hover:text-gray-900 transition-colors duration-200 text-sm md:text-md lg:text-lg"
                 >
                   Home
                 </Link>
@@ -32,7 +32,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about"
-                  className="text-gray-600 hover:text-gray-900 transition-colors duration-200 text-sm"
+                  className="text-gray-600 hover:text-gray-900 transition-colors duration-200 text-sm md:text-md lg:text-lg"
                 >
                   About
                 </Link>
@@ -40,7 +40,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/skills"
-                  className="text-gray-600 hover:text-gray-900 transition-colors duration-200 text-sm"
+                  className="text-gray-600 hover:text-gray-900 transition-colors duration-200 text-sm md:text-md lg:text-lg"
                 >
                   Skills
                 </Link>
@@ -48,7 +48,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/projects"
-                  className="text-gray-600 hover:text-gray-900 transition-colors duration-200 text-sm"
+                  className="text-gray-600 hover:text-gray-900 transition-colors duration-200 text-sm md:text-md lg:text-lg"
                 >
                   Projects
                 </Link>
@@ -66,7 +66,7 @@ export default function Footer() {
                   href="https://linkedin.com/in/yamilham"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-sm"
+                  className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-sm md:text-md lg:text-lg"
                 >
                   LinkedIn
                 </Link>
@@ -74,7 +74,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="mailto:yamilham96@gmail.com"
-                  className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-sm"
+                  className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-sm md:text-md lg:text-lg"
                 >
                   E-mail
                 </Link>
@@ -84,7 +84,7 @@ export default function Footer() {
                   href="https://github.com/yamilham"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-600 hover:text-gray-900 transition-colors duration-200 text-sm"
+                  className="text-gray-600 hover:text-gray-900 transition-colors duration-200 text-sm md:text-md lg:text-lg"
                 >
                   GitHub
                 </Link>
@@ -92,7 +92,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/chat"
-                  className="text-gray-600 hover:text-green-600 transition-colors duration-200 text-sm"
+                  className="text-gray-600 hover:text-green-600 transition-colors duration-200 text-sm md:text-md lg:text-lg"
                 >
                   Chat
                 </Link>
@@ -105,16 +105,16 @@ export default function Footer() {
               Highlight
             </h3>
             <ul className="space-y-2">
-              <li className="text-gray-600 hover:text-purple-600 transition-colors duration-200 text-sm">
+              <li className="text-gray-600 hover:text-purple-600 transition-colors duration-200 text-sm md:text-md lg:text-lg">
                 3D Illustration
               </li>
-              <li className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-sm">
+              <li className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-sm md:text-md lg:text-lg">
                 Web Development
               </li>
-              <li className="text-gray-600 hover:text-pink-600 transition-colors duration-200 text-sm">
+              <li className="text-gray-600 hover:text-pink-600 transition-colors duration-200 text-sm md:text-md lg:text-lg">
                 Design Tools
               </li>
-              <li className="text-gray-600 hover:text-indigo-600 transition-colors duration-200 text-sm">
+              <li className="text-gray-600 hover:text-indigo-600 transition-colors duration-200 text-sm md:text-md lg:text-lg">
                 Development Tools
               </li>
             </ul>
@@ -123,24 +123,10 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="mt-12 pt-8 border-t border-gray-200">
-          <div className="flex flex-col sm:flex-row justify-between items-center">
+          <div className="flex flex-col sm:flex-row justify-center items-center">
             <p className="text-gray-500 text-md">
               © {new Date().getFullYear()} Muhamad Ilham. All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-4 sm:mt-0">
-              <Link
-                href="/privacy"
-                className="text-gray-500 hover:text-gray-700 transition-colors duration-200 text-sm"
-              >
-                Privacy Policy
-              </Link>
-              <Link
-                href="/terms"
-                className="text-gray-500 hover:text-gray-700 transition-colors duration-200 text-sm"
-              >
-                Terms of Service
-              </Link>
-            </div>
           </div>
         </div>
       </div>
