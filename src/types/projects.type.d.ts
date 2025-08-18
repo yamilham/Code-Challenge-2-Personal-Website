@@ -8,5 +8,4 @@ export interface ProjectContent {
   technologies: string[];
   status: string;
   tag: string;
-  pdfPath: string;
 }
